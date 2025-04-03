@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hồ sơ cá nhân"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Ảnh đại diện -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_foreground"
+        android:scaleType="centerCrop"
+        android:background="@android:color/holo_blue_light"
+        android:padding="5dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Thông tin cá nhân -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:text="Mã ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TitleStyle" />
+        <TextView
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ValueStyle" />
+
+        <TextView
+            android:text="Tên đăng nhập"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TitleStyle" />
+        <TextView
+            android:text="luan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ValueStyle" />
+
+        <TextView
+            android:text="Họ tên"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TitleStyle" />
+        <TextView
+            android:text="Đỗ Phú Luân"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ValueStyle" />
+
+        <TextView
+            android:text="Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TitleStyle" />
+        <TextView
+            android:text="luan@gmail.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ValueStyle" />
+
+        <TextView
+            android:text="Giới tính"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TitleStyle" />
+        <TextView
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ValueStyle" />
+    </LinearLayout>
+
+    <!-- Nút đăng xuất -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG XUẤT"
+        android:background="#D32F2F"
+        android:textColor="@android:color/white"
+        android:layout_margin="20dp" />
+</LinearLayout>
